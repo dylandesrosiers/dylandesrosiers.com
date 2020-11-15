@@ -19,9 +19,10 @@
                 emailjs.sendForm('service_t2jqldp', 'template_2tcb4bo', this)
                     .then(function() {
                         console.log('SUCCESS!');
-                        window.location.href = "/contact/success"
+                        window.location.href = '/contact/success'
                     }, function(error) {
                         console.log('FAILED...', error);
+                        window.location.href = '/contact/error'
                     });
             });
         }
