@@ -13,11 +13,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class="d-flex flex-column h-100">
+    <!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
   <div class="container">
-  <h1 class="mt-5">Contact</h1>
+    <h1 class="mt-5">Contact</h1>
 
     <form action="https://submit-form.com/bexLvw5r">
+      <input
+        type="hidden"
+        name="_redirect"
+        value="https://your-website.com/thanks.html">
+
       <div class="form-group">
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required="required" class="form-control">
