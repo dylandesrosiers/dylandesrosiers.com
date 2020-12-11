@@ -15,14 +15,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-    <!-- clipboard.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
-
-    <script>
-    var btns = document.querySelectorAll('button');
-    var clipboard = new ClipboardJS(btns);
-    </script>
-
 <style>
 .swatch {
 	width: 55px;
@@ -42,350 +34,342 @@
     <h1 class="mt-4">Thread Color Chart</h1>
     <h4><i>from <a href="https://www.stadriemblems.com/color_chart/" target="_blank">Stadri Emblems</a></i></h4>
 
-  <br />
-
-  <!-- Trigger -->
-  <button class="btn btn-primary" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
-      Copy to clipboard
-  </button>
-
-<br /><br />
+<br />
 
 <div class="col-sm-12">
 	<div class="clear-div"> </div>
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
-
-			<div><div class="swatch" style="background-color: #f7f9cd" data-clipboard-text="#f7f9cd"></div> Cream </div>
-			<div><div class="swatch" style="background-color: #fff287"></div> Pale Athletic Gold </div>
-			<div><div class="swatch" style="background-color: #ffdb00"></div> Light Athletic Gold </div>
-			<div><div class="swatch" style="background-color: #ffd400"></div> Athletic Gold </div>
-			<div><div class="swatch" style="background-color: #fcbd2c"></div> Dark Athletic Gold </div>
-			<div><div class="swatch" style="background-color: #fccf8b"></div> Apricot </div>
+			<div class="card" data-clipboard-text="#f7f9cd" style="background-color: #f7f9cd">Cream</div>
+			<div><div class="swatch" data-clipboard-text="#fff287" style="background-color: #fff287"></div> Pale Athletic Gold </div>
+			<div><div class="swatch" data-clipboard-text="#ffdb00" style="background-color: #ffdb00"></div> Light Athletic Gold </div>
+			<div><div class="swatch" data-clipboard-text="#ffd400" style="background-color: #ffd400"></div> Athletic Gold </div>
+			<div><div class="swatch" data-clipboard-text="#fcbd2c" style="background-color: #fcbd2c"></div> Dark Athletic Gold </div>
+			<div><div class="swatch" data-clipboard-text="#fccf8b" style="background-color: #fccf8b"></div> Apricot </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #fff8ca"></div> Pale Gold </div>
-			<div><div class="swatch" style="background-color: #fff0a4"></div> Light Gold </div>
-			<div><div class="swatch" style="background-color: #ffba00"></div> Gold </div>
-			<div><div class="swatch" style="background-color: #cc8a00"></div> Antique Gold </div>
-			<div><div class="swatch" style="background-color: #b77b00"></div> Dark Antique Gold </div>
-			<div><div class="swatch" style="background-color: #ab3918"></div> Rust </div>
+			<div><div class="swatch" data-clipboard-text="#fff8ca" style="background-color: #fff8ca"></div> Pale Gold </div>
+			<div><div class="swatch" data-clipboard-text="#fff0a4" style="background-color: #fff0a4"></div> Light Gold </div>
+			<div><div class="swatch" data-clipboard-text="#ffba00" style="background-color: #ffba00"></div> Gold </div>
+			<div><div class="swatch" data-clipboard-text="#cc8a00" style="background-color: #cc8a00"></div> Antique Gold </div>
+			<div><div class="swatch" data-clipboard-text="#b77b00" style="background-color: #b77b00"></div> Dark Antique Gold </div>
+			<div><div class="swatch" data-clipboard-text="#ab3918" style="background-color: #ab3918"></div> Rust </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #eee07d"></div> Pale Old Gold </div>
-			<div><div class="swatch" style="background-color: #e0d97c"></div> Light Old Gold </div>
-			<div><div class="swatch" style="background-color: #e4be23"></div> Old Gold </div>
-			<div><div class="swatch" style="background-color: #ab8f00"></div> Deep Old Gold </div>
-			<div><div class="swatch" style="background-color: #80620b"></div> Dark Old Gold </div>
-			<div><div class="swatch" style="background-color: #fdcb35"></div> Wheat </div>
+			<div><div class="swatch" data-clipboard-text="#eee07d" style="background-color: #eee07d"></div> Pale Old Gold </div>
+			<div><div class="swatch" data-clipboard-text="#e0d97c" style="background-color: #e0d97c"></div> Light Old Gold </div>
+			<div><div class="swatch" data-clipboard-text="#e4be23" style="background-color: #e4be23"></div> Old Gold </div>
+			<div><div class="swatch" data-clipboard-text="#ab8f00" style="background-color: #ab8f00"></div> Deep Old Gold </div>
+			<div><div class="swatch" data-clipboard-text="#80620b" style="background-color: #80620b"></div> Dark Old Gold </div>
+			<div><div class="swatch" data-clipboard-text="#fdcb35" style="background-color: #fdcb35"></div> Wheat </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #fbfdb5"></div> Pale Yellow </div>
-			<div><div class="swatch" style="background-color: #fbfe89"></div> Light Lemon </div>
-			<div><div class="swatch" style="background-color: #ffff51"></div> Lemon </div>
-			<div><div class="swatch" style="background-color: #f9ff04"></div> Yellow </div>
-			<div><div class="swatch" style="background-color: #ffec00"></div> Deep Yellow </div>
-			<div><div class="swatch" style="background-color: #ffd900"></div> Yellow-Gold </div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #ffc59d"></div> Peach </div>
-			<div><div class="swatch" style="background-color: #feb97a"></div> Dark Peach </div>
-			<div><div class="swatch" style="background-color: #ffab00"></div> Orange Peel </div>
-			<div><div class="swatch" style="background-color: #ff9b00"></div> Carrot </div>
-			<div><div class="swatch" style="background-color: #ed7600"></div> Burnt Orange </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #ffd2b9"></div> Pink Flesh </div>
-			<div><div class="swatch" style="background-color: #fcd1b1"></div> Light Flesh </div>
-			<div><div class="swatch" style="background-color: #eebb8c"></div> Flesh </div>
-			<div><div class="swatch" style="background-color: #dcbead"></div> Tan Flesh </div>
-			<div><div class="swatch" style="background-color: #f7bf9c"></div> Tan Flesh II </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #fca05c"></div> Light Orange </div>
-			<div><div class="swatch" style="background-color: #ff8f59"></div> Orange </div>
-			<div><div class="swatch" style="background-color: #ff7b3c"></div> Tangerine </div>
-			<div><div class="swatch" style="background-color: #ff5e00"></div> Bright Orange </div>
-			<div><div class="swatch" style="background-color: #ee5019"></div> Deep Orange </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #bf0026"></div> Deep Red </div>
-			<div><div class="swatch" style="background-color: #9f0020"></div> Burgundy </div>
-			<div><div class="swatch" style="background-color: #88001c"></div> Deep Burgundy </div>
-			<div><div class="swatch" style="background-color: #710016"></div> Dark Burgundy </div>
-			<div><div class="swatch" style="background-color: #590012"></div> Maroon </div>
+			<div><div class="swatch" data-clipboard-text="#fbfdb5" style="background-color: #fbfdb5"></div> Pale Yellow </div>
+			<div><div class="swatch" data-clipboard-text="#fbfe89" style="background-color: #fbfe89"></div> Light Lemon </div>
+			<div><div class="swatch" data-clipboard-text="#ffff51" style="background-color: #ffff51"></div> Lemon </div>
+			<div><div class="swatch" data-clipboard-text="#f9ff04" style="background-color: #f9ff04"></div> Yellow </div>
+			<div><div class="swatch" data-clipboard-text="#ffec00" style="background-color: #ffec00"></div> Deep Yellow </div>
+			<div><div class="swatch" data-clipboard-text="#ffd900" style="background-color: #ffd900"></div> Yellow-Gold </div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #ff0000"></div> Red </div>
-			<div><div class="swatch" style="background-color: #e60000"></div> Bright Red </div>
-			<div><div class="swatch" style="background-color: #eb0107"></div> Vermilion </div>
-			<div><div class="swatch" style="background-color: #dc0106"></div> Deep Vermilion </div>
-			<div><div class="swatch" style="background-color: #d10106"></div> Dark Vermilion </div>
+			<div><div class="swatch" data-clipboard-text="#ffc59d" style="background-color: #ffc59d"></div> Peach </div>
+			<div><div class="swatch" data-clipboard-text="#feb97a" style="background-color: #feb97a"></div> Dark Peach </div>
+			<div><div class="swatch" data-clipboard-text="#ffab00" style="background-color: #ffab00"></div> Orange Peel </div>
+			<div><div class="swatch" data-clipboard-text="#ff9b00" style="background-color: #ff9b00"></div> Carrot </div>
+			<div><div class="swatch" data-clipboard-text="#ed7600" style="background-color: #ed7600"></div> Burnt Orange </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #fec2b4"></div> Salmon </div>
-			<div><div class="swatch" style="background-color: #eb5454"></div> Dark Salmon </div>
-			<div><div class="swatch" style="background-color: #e84040"></div> Deep Salmon </div>
-			<div><div class="swatch" style="background-color: #fa6170"></div> Dusty Rose </div>
-			<div><div class="swatch" style="background-color: #d7253c"></div> Dark Dusty Rose </div>
+			<div><div class="swatch" data-clipboard-text="#ffd2b9" style="background-color: #ffd2b9"></div> Pink Flesh </div>
+			<div><div class="swatch" data-clipboard-text="#fcd1b1" style="background-color: #fcd1b1"></div> Light Flesh </div>
+			<div><div class="swatch" data-clipboard-text="#eebb8c" style="background-color: #eebb8c"></div> Flesh </div>
+			<div><div class="swatch" data-clipboard-text="#dcbead" style="background-color: #dcbead"></div> Tan Flesh </div>
+			<div><div class="swatch" data-clipboard-text="#f7bf9c" style="background-color: #f7bf9c"></div> Tan Flesh II </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #f9c9d7"></div> Pale Fuchsia </div>
-			<div><div class="swatch" style="background-color: #ffa8c7"></div> Light Fuchsia </div>
-			<div><div class="swatch" style="background-color: #d40069"></div> Fuchsia </div>
-			<div><div class="swatch" style="background-color: #a80056"></div> Dark Fuchsia </div>
-			<div><div class="swatch" style="background-color: #fe819a"></div> Fluorescent Bubble Gum </div>
+			<div><div class="swatch" data-clipboard-text="#fca05c" style="background-color: #fca05c"></div> Light Orange </div>
+			<div><div class="swatch" data-clipboard-text="#ff8f59" style="background-color: #ff8f59"></div> Orange </div>
+			<div><div class="swatch" data-clipboard-text="#ff7b3c" style="background-color: #ff7b3c"></div> Tangerine </div>
+			<div><div class="swatch" data-clipboard-text="#ff5e00" style="background-color: #ff5e00"></div> Bright Orange </div>
+			<div><div class="swatch" data-clipboard-text="#ee5019" style="background-color: #ee5019"></div> Deep Orange </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #f1c9d8"></div> Puce </div>
-			<div><div class="swatch" style="background-color: #ffc1cb"></div> Pale Floral Pink </div>
-			<div><div class="swatch" style="background-color: #ffa4bc"></div> Light Floral Pink </div>
-			<div><div class="swatch" style="background-color: #ff5576"></div> Floral Pink </div>
-			<div><div class="swatch" style="background-color: #fa2342"></div> Dark Floral Pink </div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #ffc2dd"></div> Pale Pink </div>
-			<div><div class="swatch" style="background-color: #f6a5be"></div> Light Pink </div>
-			<div><div class="swatch" style="background-color: #ff76a4"></div> Medium Pink </div>
-			<div><div class="swatch" style="background-color: #ff6f93"></div> Pink </div>
-			<div><div class="swatch" style="background-color: #fb4c8d"></div> Deep Pink </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #ffecf0"></div> Light Dusty Rose </div>
-			<div><div class="swatch" style="background-color: #ea0000"></div> Dark Fluorescent Red </div>
-			<div><div class="swatch" style="background-color: #ec005b"></div> Hot Magenta </div>
-			<div><div class="swatch" style="background-color: #ff80c0"></div> Fluorescent Pink </div>
-			<div><div class="swatch" style="background-color: #ff5eae"></div> Hot Pink </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #f3d5f6"></div> Pale Magenta </div>
-			<div><div class="swatch" style="background-color: #ee81e2"></div> Light Magenta </div>
-			<div><div class="swatch" style="background-color: #b801b7"></div> Magenta </div>
-			<div><div class="swatch" style="background-color: #9a1f85"></div> Dark Magenta </div>
-			<div><div class="swatch" style="background-color: #7c1f52"></div> Plum </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #fcf3f9"></div> Powder </div>
-			<div><div class="swatch" style="background-color: #c6bced"></div> Lilac </div>
-			<div><div class="swatch" style="background-color: #ba92eb"></div> Medium Purple </div>
-			<div><div class="swatch" style="background-color: #ae9bdf"></div> Light Purple </div>
-			<div><div class="swatch" style="background-color: #9a40d0"></div> Purple </div>
+			<div><div class="swatch" data-clipboard-text="#bf0026" style="background-color: #bf0026"></div> Deep Red </div>
+			<div><div class="swatch" data-clipboard-text="#9f0020" style="background-color: #9f0020"></div> Burgundy </div>
+			<div><div class="swatch" data-clipboard-text="#88001c" style="background-color: #88001c"></div> Deep Burgundy </div>
+			<div><div class="swatch" data-clipboard-text="#710016" style="background-color: #710016"></div> Dark Burgundy </div>
+			<div><div class="swatch" data-clipboard-text="#590012" style="background-color: #590012"></div> Maroon </div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #e5daf7"></div> Pale Violet </div>
-			<div><div class="swatch" style="background-color: #cdacf2"></div> Light Violet </div>
-			<div><div class="swatch" style="background-color: #9737bb"></div> Violet </div>
-			<div><div class="swatch" style="background-color: #730b8c"></div> Deep Violet </div>
-			<div><div class="swatch" style="background-color: #7d178c"></div> Blue Violet </div>
+			<div><div class="swatch" data-clipboard-text="#ff0000" style="background-color: #ff0000"></div> Red </div>
+			<div><div class="swatch" data-clipboard-text="#e60000" style="background-color: #e60000"></div> Bright Red </div>
+			<div><div class="swatch" data-clipboard-text="#eb0107" style="background-color: #eb0107"></div> Vermilion </div>
+			<div><div class="swatch" data-clipboard-text="#dc0106" style="background-color: #dc0106"></div> Deep Vermilion </div>
+			<div><div class="swatch" data-clipboard-text="#d10106" style="background-color: #d10106"></div> Dark Vermilion </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #c6d9f9"></div> Pale Sky </div>
-			<div><div class="swatch" style="background-color: #a5cef5"></div> Light Sky </div>
-			<div><div class="swatch" style="background-color: #7cb3f1"></div> Baby Blue </div>
-			<div><div class="swatch" style="background-color: #5b92e6"></div> Dodger Blue </div>
-			<div><div class="swatch" style="background-color: #2175d9"></div> Medium Blue </div>
+			<div><div class="swatch" data-clipboard-text="#fec2b4" style="background-color: #fec2b4"></div> Salmon </div>
+			<div><div class="swatch" data-clipboard-text="#eb5454" style="background-color: #eb5454"></div> Dark Salmon </div>
+			<div><div class="swatch" data-clipboard-text="#e84040" style="background-color: #e84040"></div> Deep Salmon </div>
+			<div><div class="swatch" data-clipboard-text="#fa6170" style="background-color: #fa6170"></div> Dusty Rose </div>
+			<div><div class="swatch" data-clipboard-text="#d7253c" style="background-color: #d7253c"></div> Dark Dusty Rose </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #2f009c"></div> Royal Blue </div>
-			<div><div class="swatch" style="background-color: #1e117b"></div> Ultra Marine </div>
-			<div><div class="swatch" style="background-color: #e0e9f1"></div> Pale Blue </div>
-			<div><div class="swatch" style="background-color: #6784cf"></div> Cornflower </div>
-			<div><div class="swatch" style="background-color: #4367c5"></div> Blue </div>
+			<div><div class="swatch" data-clipboard-text="#f9c9d7" style="background-color: #f9c9d7"></div> Pale Fuchsia </div>
+			<div><div class="swatch" data-clipboard-text="#ffa8c7" style="background-color: #ffa8c7"></div> Light Fuchsia </div>
+			<div><div class="swatch" data-clipboard-text="#d40069" style="background-color: #d40069"></div> Fuchsia </div>
+			<div><div class="swatch" data-clipboard-text="#a80056" style="background-color: #a80056"></div> Dark Fuchsia </div>
+			<div><div class="swatch" data-clipboard-text="#fe819a" style="background-color: #fe819a"></div> Fluorescent Bubble Gum </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #110088"></div> Dark Royal </div>
-			<div><div class="swatch" style="background-color: #00006c"></div> Navy </div>
-			<div><div class="swatch" style="background-color: #00044a"></div> Dark Navy </div>
-			<div><div class="swatch" style="background-color: #000225"></div> Midnight </div>
-			<div><div class="swatch" style="background-color: #afe6f8"></div> Icy Blue </div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #d2deeb"></div> Pale Blue Gray </div>
-			<div><div class="swatch" style="background-color: #9bb3e9"></div> Light Blue Gray </div>
-			<div><div class="swatch" style="background-color: #6a83b2"></div> Blue Gray </div>
-			<div><div class="swatch" style="background-color: #2f4f88"></div> Dark Blue Gray </div>
-			<div><div class="swatch" style="background-color: #5f9bcf"></div> Pacific Blue </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #00709f"></div> Ocean </div>
-			<div><div class="swatch" style="background-color: #005474"></div> Deep Ocean </div>
-			<div><div class="swatch" style="background-color: #afe6f8"></div> Light Turquoise </div>
-			<div><div class="swatch" style="background-color: #00b2dc"></div> Turquoise </div>
-			<div><div class="swatch" style="background-color: #0092c3"></div> Dark Turquoise </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #bfedf5"></div> Pale Cyan </div>
-			<div><div class="swatch" style="background-color: #62d6f8"></div> Light Cyan </div>
-			<div><div class="swatch" style="background-color: #0071e1"></div> Cyan </div>
-			<div><div class="swatch" style="background-color: #005bae"></div> Dark Cyan </div>
-			<div><div class="swatch" style="background-color: #5c81aa"></div> Deep Periwinkle </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #c4d6d9"></div> Ash Blue </div>
-			<div><div class="swatch" style="background-color: #77a0a8"></div> Slate Blue </div>
-			<div><div class="swatch" style="background-color: #bbebf4"></div> Pale Blue-Green </div>
-			<div><div class="swatch" style="background-color: #005474"></div> Blue Green </div>
-			<div><div class="swatch" style="background-color: #44646a"></div> Dark Blue Green </div>
+			<div><div class="swatch" data-clipboard-text="#f1c9d8" style="background-color: #f1c9d8"></div> Puce </div>
+			<div><div class="swatch" data-clipboard-text="#ffc1cb" style="background-color: #ffc1cb"></div> Pale Floral Pink </div>
+			<div><div class="swatch" data-clipboard-text="#ffa4bc" style="background-color: #ffa4bc"></div> Light Floral Pink </div>
+			<div><div class="swatch" data-clipboard-text="#ff5576" style="background-color: #ff5576"></div> Floral Pink </div>
+			<div><div class="swatch" data-clipboard-text="#fa2342" style="background-color: #fa2342"></div> Dark Floral Pink </div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #caf6f4"></div> Pale Sea Foam </div>
-			<div><div class="swatch" style="background-color: #a3edf1"></div> Sea Foam </div>
-			<div><div class="swatch" style="background-color: #75e8df"></div> Light Teal </div>
-			<div><div class="swatch" style="background-color: #00b4a6"></div> Teal </div>
-			<div><div class="swatch" style="background-color: #009286"></div> Deep Teal </div>
+			<div><div class="swatch" data-clipboard-text="#ffc2dd" style="background-color: #ffc2dd"></div> Pale Pink </div>
+			<div><div class="swatch" data-clipboard-text="#f6a5be" style="background-color: #f6a5be"></div> Light Pink </div>
+			<div><div class="swatch" data-clipboard-text="#ff76a4" style="background-color: #ff76a4"></div> Medium Pink </div>
+			<div><div class="swatch" data-clipboard-text="#ff6f93" style="background-color: #ff6f93"></div> Pink </div>
+			<div><div class="swatch" data-clipboard-text="#fb4c8d" style="background-color: #fb4c8d"></div> Deep Pink </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #c7fac8"></div> Pastel Green </div>
-			<div><div class="swatch" style="background-color: #2acfb8"></div> Wintergreen </div>
-			<div><div class="swatch" style="background-color: #006e4a"></div> Pine </div>
-			<div><div class="swatch" style="background-color: #004e34"></div> Dark Pine </div>
-			<div><div class="swatch" style="background-color: #008a3f"></div> Emerald </div>
+			<div><div class="swatch" data-clipboard-text="#ffecf0" style="background-color: #ffecf0"></div> Light Dusty Rose </div>
+			<div><div class="swatch" data-clipboard-text="#ea0000" style="background-color: #ea0000"></div> Dark Fluorescent Red </div>
+			<div><div class="swatch" data-clipboard-text="#ec005b" style="background-color: #ec005b"></div> Hot Magenta </div>
+			<div><div class="swatch" data-clipboard-text="#ff80c0" style="background-color: #ff80c0"></div> Fluorescent Pink </div>
+			<div><div class="swatch" data-clipboard-text="#ff5eae" style="background-color: #ff5eae"></div> Hot Pink </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #cde4c5"></div> Pale Forest </div>
-			<div><div class="swatch" style="background-color: #7eb8a2"></div> Light Forest </div>
-			<div><div class="swatch" style="background-color: #23673d"></div> Forest </div>
-			<div><div class="swatch" style="background-color: #215134"></div> Dark Forest </div>
-			<div><div class="swatch" style="background-color: #96e78a"></div> Kiwi </div>
+			<div><div class="swatch" data-clipboard-text="#f3d5f6" style="background-color: #f3d5f6"></div> Pale Magenta </div>
+			<div><div class="swatch" data-clipboard-text="#ee81e2" style="background-color: #ee81e2"></div> Light Magenta </div>
+			<div><div class="swatch" data-clipboard-text="#b801b7" style="background-color: #b801b7"></div> Magenta </div>
+			<div><div class="swatch" data-clipboard-text="#9a1f85" style="background-color: #9a1f85"></div> Dark Magenta </div>
+			<div><div class="swatch" data-clipboard-text="#7c1f52" style="background-color: #7c1f52"></div> Plum </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #56d873"></div> Sage </div>
-			<div><div class="swatch" style="background-color: #00a348"></div> Dark Sage </div>
-			<div><div class="swatch" style="background-color: #008a3f"></div> Light Spruce </div>
-			<div><div class="swatch" style="background-color: #00694a"></div> Spruce </div>
-			<div><div class="swatch" style="background-color: #005943"></div> Dark Spruce </div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #e6f1e2"></div> Pale Green </div>
-			<div><div class="swatch" style="background-color: #c9fac0"></div> Pale Mint </div>
-			<div><div class="swatch" style="background-color: #8ff397"></div> Light Mint </div>
-			<div><div class="swatch" style="background-color: #75ee84"></div> Mint </div>
-			<div><div class="swatch" style="background-color: #a8eb9b"></div> Lime </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #56d869"></div> Light Kelly </div>
-			<div><div class="swatch" style="background-color: #00a348"></div> Kelly </div>
-			<div><div class="swatch" style="background-color: #66ff66"></div> Fluorescent Green </div>
-			<div><div class="swatch" style="background-color: #bcfd5b"></div> Safety Green </div>
-			<div><div class="swatch" style="background-color: #daf834"></div> Fluorescent Yellow </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #4ed153"></div> Light Spring Green </div>
-			<div><div class="swatch" style="background-color: #00bd27"></div> Spring Green </div>
-			<div><div class="swatch" style="background-color: #20a42c"></div> Dark Spring Green </div>
-			<div><div class="swatch" style="background-color: #b5d000"></div> Light Chromium </div>
-			<div><div class="swatch" style="background-color: #afde0e"></div> Chromium </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #6cbe45"></div> Light Moss </div>
-			<div><div class="swatch" style="background-color: #4e8028"></div> Moss </div>
-			<div><div class="swatch" style="background-color: #526c31"></div> Deep Moss </div>
-			<div><div class="swatch" style="background-color: #394d22"></div> Dark Moss </div>
-			<div><div class="swatch" style="background-color: #c4ce00"></div> Green-Yellow </div>
+			<div><div class="swatch" data-clipboard-text="#fcf3f9" style="background-color: #fcf3f9"></div> Powder </div>
+			<div><div class="swatch" data-clipboard-text="#c6bced" style="background-color: #c6bced"></div> Lilac </div>
+			<div><div class="swatch" data-clipboard-text="#ba92eb" style="background-color: #ba92eb"></div> Medium Purple </div>
+			<div><div class="swatch" data-clipboard-text="#ae9bdf" style="background-color: #ae9bdf"></div> Light Purple </div>
+			<div><div class="swatch" data-clipboard-text="#9a40d0" style="background-color: #9a40d0"></div> Purple </div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #787b1b"></div> Olive </div>
-			<div><div class="swatch" style="background-color: #6c7b1a"></div> Dark Olive </div>
-			<div><div class="swatch" style="background-color: #ced080"></div> Light Olive Drab </div>
-			<div><div class="swatch" style="background-color: #b1a454"></div> Olive Drab </div>
-			<div><div class="swatch" style="background-color: #948843"></div> Dark Olive Drab </div>
+			<div><div class="swatch" data-clipboard-text="#e5daf7" style="background-color: #e5daf7"></div> Pale Violet </div>
+			<div><div class="swatch" data-clipboard-text="#cdacf2" style="background-color: #cdacf2"></div> Light Violet </div>
+			<div><div class="swatch" data-clipboard-text="#9737bb" style="background-color: #9737bb"></div> Violet </div>
+			<div><div class="swatch" data-clipboard-text="#730b8c" style="background-color: #730b8c"></div> Deep Violet </div>
+			<div><div class="swatch" data-clipboard-text="#7d178c" style="background-color: #7d178c"></div> Blue Violet </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #e8e8cd"></div> Light Khaki </div>
-			<div><div class="swatch" style="background-color: #cec89e"></div> Khaki </div>
-			<div><div class="swatch" style="background-color: #8a7444"></div> Deep Khaki </div>
-			<div><div class="swatch" style="background-color: #816b3f"></div> Dark Khaki </div>
-			<div><div class="swatch" style="background-color: #857734"></div> Yellow-Green Drab </div>
+			<div><div class="swatch" data-clipboard-text="#c6d9f9" style="background-color: #c6d9f9"></div> Pale Sky </div>
+			<div><div class="swatch" data-clipboard-text="#a5cef5" style="background-color: #a5cef5"></div> Light Sky </div>
+			<div><div class="swatch" data-clipboard-text="#7cb3f1" style="background-color: #7cb3f1"></div> Baby Blue </div>
+			<div><div class="swatch" data-clipboard-text="#5b92e6" style="background-color: #5b92e6"></div> Dodger Blue </div>
+			<div><div class="swatch" data-clipboard-text="#2175d9" style="background-color: #2175d9"></div> Medium Blue </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #afc1b4"></div> ACU Green </div>
-			<div><div class="swatch" style="background-color: #91a597"></div> Light Cool Olive Drab </div>
-			<div><div class="swatch" style="background-color: #5a7162"></div> Cool Olive Drab </div>
-			<div><div class="swatch" style="background-color: #dad7cb"></div> Light Dirty Gray </div>
-			<div><div class="swatch" style="background-color: #a3a28f"></div> Dirty Gray </div>
+			<div><div class="swatch" data-clipboard-text="#2f009c" style="background-color: #2f009c"></div> Royal Blue </div>
+			<div><div class="swatch" data-clipboard-text="#1e117b" style="background-color: #1e117b"></div> Ultra Marine </div>
+			<div><div class="swatch" data-clipboard-text="#e0e9f1" style="background-color: #e0e9f1"></div> Pale Blue </div>
+			<div><div class="swatch" data-clipboard-text="#6784cf" style="background-color: #6784cf"></div> Cornflower </div>
+			<div><div class="swatch" data-clipboard-text="#4367c5" style="background-color: #4367c5"></div> Blue </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #e8e1d7"></div> Pale French Gray </div>
-			<div><div class="swatch" style="background-color: #cfc0a9"></div> French Gray </div>
-			<div><div class="swatch" style="background-color: #897954"></div> Dark French Gray </div>
-			<div><div class="swatch" style="background-color: #efdec7"></div> Pale Brown </div>
-			<div><div class="swatch" style="background-color: #e0cbab"></div> Light Brown </div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #e2e2e2"></div> Light Gray </div>
-			<div><div class="swatch" style="background-color: #a6a6a6"></div> Pewter </div>
-			<div><div class="swatch" style="background-color: #868686"></div> Gray </div>
-			<div><div class="swatch" style="background-color: #606060"></div> Dark Gray </div>
-			<div><div class="swatch" style="background-color: #404040"></div> Charcoal </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #bfb7b1"></div> Pale Warm Gray </div>
-			<div><div class="swatch" style="background-color: #c2bfb6"></div> Light Warm Gray </div>
-			<div><div class="swatch" style="background-color: #847872"></div> Warm Gray </div>
-			<div><div class="swatch" style="background-color: #726e63"></div> Deep Warm Gray </div>
-			<div><div class="swatch" style="background-color: #686155"></div> Dark Warm Gray </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #cacaca"></div> Silver Gray </div>
-			<div><div class="swatch" style="background-color: #d9d0d0"></div> Light Smoke </div>
-			<div><div class="swatch" style="background-color: #c5b8b8"></div> Smoke </div>
-			<div><div class="swatch" style="background-color: #aa9797"></div> Dark Smoke </div>
-			<div><div class="swatch" style="background-color: #ddd0d0"></div> Pale Cool Brown </div>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #a34d30"></div> Clay </div>
-			<div><div class="swatch" style="background-color: #75392b"></div> Red-Brown </div>
-			<div><div class="swatch" style="background-color: #e6d8b9"></div> Light Tan </div>
-			<div><div class="swatch" style="background-color: #be9f7c"></div> Tan </div>
-			<div><div class="swatch" style="background-color: #aa7955"></div> Dark Tan </div>
+			<div><div class="swatch" data-clipboard-text="#110088" style="background-color: #110088"></div> Dark Royal </div>
+			<div><div class="swatch" data-clipboard-text="#00006c" style="background-color: #00006c"></div> Navy </div>
+			<div><div class="swatch" data-clipboard-text="#00044a" style="background-color: #00044a"></div> Dark Navy </div>
+			<div><div class="swatch" data-clipboard-text="#000225" style="background-color: #000225"></div> Midnight </div>
+			<div><div class="swatch" data-clipboard-text="#afe6f8" style="background-color: #afe6f8"></div> Icy Blue </div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #b49367"></div> Earth Brown </div>
-			<div><div class="swatch" style="background-color: #dbb694"></div> Light Warm Brown </div>
-			<div><div class="swatch" style="background-color: #bb6106"></div> Warm Brown </div>
-			<div><div class="swatch" style="background-color: #a0501b"></div> Dark Warm Brown </div>
-			<div><div class="swatch" style="background-color: #894212"></div> Deep Warm Brown </div>
+			<div><div class="swatch" data-clipboard-text="#d2deeb" style="background-color: #d2deeb"></div> Pale Blue Gray </div>
+			<div><div class="swatch" data-clipboard-text="#9bb3e9" style="background-color: #9bb3e9"></div> Light Blue Gray </div>
+			<div><div class="swatch" data-clipboard-text="#6a83b2" style="background-color: #6a83b2"></div> Blue Gray </div>
+			<div><div class="swatch" data-clipboard-text="#2f4f88" style="background-color: #2f4f88"></div> Dark Blue Gray </div>
+			<div><div class="swatch" data-clipboard-text="#5f9bcf" style="background-color: #5f9bcf"></div> Pacific Blue </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #9b6857"></div> Cool Brown </div>
-			<div><div class="swatch" style="background-color: #775042"></div> Dark Cool Brown </div>
-			<div><div class="swatch" style="background-color: #ba7b07"></div> Hazel </div>
-			<div><div class="swatch" style="background-color: #795104"></div> Cinnamon </div>
-			<div><div class="swatch" style="background-color: #5a3c03"></div> Mahogany </div>
+			<div><div class="swatch" data-clipboard-text="#00709f" style="background-color: #00709f"></div> Ocean </div>
+			<div><div class="swatch" data-clipboard-text="#005474" style="background-color: #005474"></div> Deep Ocean </div>
+			<div><div class="swatch" data-clipboard-text="#afe6f8" style="background-color: #afe6f8"></div> Light Turquoise </div>
+			<div><div class="swatch" data-clipboard-text="#00b2dc" style="background-color: #00b2dc"></div> Turquoise </div>
+			<div><div class="swatch" data-clipboard-text="#0092c3" style="background-color: #0092c3"></div> Dark Turquoise </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #8e5a34"></div> Milk Chocolate </div>
-			<div><div class="swatch" style="background-color: #663100"></div> Brown </div>
-			<div><div class="swatch" style="background-color: #4f2403"></div> Dark Brown </div>
-			<div><div class="swatch" style="background-color: #b8917c"></div> Doe </div>
-			<div><div class="swatch" style="background-color: #9d6448"></div> Bronze </div>
+			<div><div class="swatch" data-clipboard-text="#bfedf5" style="background-color: #bfedf5"></div> Pale Cyan </div>
+			<div><div class="swatch" data-clipboard-text="#62d6f8" style="background-color: #62d6f8"></div> Light Cyan </div>
+			<div><div class="swatch" data-clipboard-text="#0071e1" style="background-color: #0071e1"></div> Cyan </div>
+			<div><div class="swatch" data-clipboard-text="#005bae" style="background-color: #005bae"></div> Dark Cyan </div>
+			<div><div class="swatch" data-clipboard-text="#5c81aa" style="background-color: #5c81aa"></div> Deep Periwinkle </div>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #effd3e"></div> Fluorescent Gold </div>
-			<div><div class="swatch" style="background-color: #fbb64f"></div> Light Fluorescent Orange </div>
-			<div><div class="swatch" style="background-color: #ff8000"></div> Fluorescent Orange </div>
-			<div><div class="swatch" style="background-color: #ffffff"></div> White </div>
-			<div><div class="swatch" style="background-color: #000000"></div> Black </div>
+			<div><div class="swatch" data-clipboard-text="#c4d6d9" style="background-color: #c4d6d9"></div> Ash Blue </div>
+			<div><div class="swatch" data-clipboard-text="#77a0a8" style="background-color: #77a0a8"></div> Slate Blue </div>
+			<div><div class="swatch" data-clipboard-text="#bbebf4" style="background-color: #bbebf4"></div> Pale Blue-Green </div>
+			<div><div class="swatch" data-clipboard-text="#005474" style="background-color: #005474"></div> Blue Green </div>
+			<div><div class="swatch" data-clipboard-text="#44646a" style="background-color: #44646a"></div> Dark Blue Green </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#caf6f4" style="background-color: #caf6f4"></div> Pale Sea Foam </div>
+			<div><div class="swatch" data-clipboard-text="#a3edf1" style="background-color: #a3edf1"></div> Sea Foam </div>
+			<div><div class="swatch" data-clipboard-text="#75e8df" style="background-color: #75e8df"></div> Light Teal </div>
+			<div><div class="swatch" data-clipboard-text="#00b4a6" style="background-color: #00b4a6"></div> Teal </div>
+			<div><div class="swatch" data-clipboard-text="#009286" style="background-color: #009286"></div> Deep Teal </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#c7fac8" style="background-color: #c7fac8"></div> Pastel Green </div>
+			<div><div class="swatch" data-clipboard-text="#2acfb8" style="background-color: #2acfb8"></div> Wintergreen </div>
+			<div><div class="swatch" data-clipboard-text="#006e4a" style="background-color: #006e4a"></div> Pine </div>
+			<div><div class="swatch" data-clipboard-text="#004e34" style="background-color: #004e34"></div> Dark Pine </div>
+			<div><div class="swatch" data-clipboard-text="#008a3f" style="background-color: #008a3f"></div> Emerald </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#cde4c5" style="background-color: #cde4c5"></div> Pale Forest </div>
+			<div><div class="swatch" data-clipboard-text="#7eb8a2" style="background-color: #7eb8a2"></div> Light Forest </div>
+			<div><div class="swatch" data-clipboard-text="#23673d" style="background-color: #23673d"></div> Forest </div>
+			<div><div class="swatch" data-clipboard-text="#215134" style="background-color: #215134"></div> Dark Forest </div>
+			<div><div class="swatch" data-clipboard-text="#96e78a" style="background-color: #96e78a"></div> Kiwi </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#56d873" style="background-color: #56d873"></div> Sage </div>
+			<div><div class="swatch" data-clipboard-text="#00a348" style="background-color: #00a348"></div> Dark Sage </div>
+			<div><div class="swatch" data-clipboard-text="#008a3f" style="background-color: #008a3f"></div> Light Spruce </div>
+			<div><div class="swatch" data-clipboard-text="#00694a" style="background-color: #00694a"></div> Spruce </div>
+			<div><div class="swatch" data-clipboard-text="#005943" style="background-color: #005943"></div> Dark Spruce </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#e6f1e2" style="background-color: #e6f1e2"></div> Pale Green </div>
+			<div><div class="swatch" data-clipboard-text="#c9fac0" style="background-color: #c9fac0"></div> Pale Mint </div>
+			<div><div class="swatch" data-clipboard-text="#8ff397" style="background-color: #8ff397"></div> Light Mint </div>
+			<div><div class="swatch" data-clipboard-text="#75ee84" style="background-color: #75ee84"></div> Mint </div>
+			<div><div class="swatch" data-clipboard-text="#a8eb9b" style="background-color: #a8eb9b"></div> Lime </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#56d869" style="background-color: #56d869"></div> Light Kelly </div>
+			<div><div class="swatch" data-clipboard-text="#00a348" style="background-color: #00a348"></div> Kelly </div>
+			<div><div class="swatch" data-clipboard-text="#66ff66" style="background-color: #66ff66"></div> Fluorescent Green </div>
+			<div><div class="swatch" data-clipboard-text="#bcfd5b" style="background-color: #bcfd5b"></div> Safety Green </div>
+			<div><div class="swatch" data-clipboard-text="#daf834" style="background-color: #daf834"></div> Fluorescent Yellow </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#4ed153" style="background-color: #4ed153"></div> Light Spring Green </div>
+			<div><div class="swatch" data-clipboard-text="#00bd27" style="background-color: #00bd27"></div> Spring Green </div>
+			<div><div class="swatch" data-clipboard-text="#20a42c" style="background-color: #20a42c"></div> Dark Spring Green </div>
+			<div><div class="swatch" data-clipboard-text="#b5d000" style="background-color: #b5d000"></div> Light Chromium </div>
+			<div><div class="swatch" data-clipboard-text="#afde0e" style="background-color: #afde0e"></div> Chromium </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#6cbe45" style="background-color: #6cbe45"></div> Light Moss </div>
+			<div><div class="swatch" data-clipboard-text="#4e8028" style="background-color: #4e8028"></div> Moss </div>
+			<div><div class="swatch" data-clipboard-text="#526c31" style="background-color: #526c31"></div> Deep Moss </div>
+			<div><div class="swatch" data-clipboard-text="#394d22" style="background-color: #394d22"></div> Dark Moss </div>
+			<div><div class="swatch" data-clipboard-text="#c4ce00" style="background-color: #c4ce00"></div> Green-Yellow </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#787b1b" style="background-color: #787b1b"></div> Olive </div>
+			<div><div class="swatch" data-clipboard-text="#6c7b1a" style="background-color: #6c7b1a"></div> Dark Olive </div>
+			<div><div class="swatch" data-clipboard-text="#ced080" style="background-color: #ced080"></div> Light Olive Drab </div>
+			<div><div class="swatch" data-clipboard-text="#b1a454" style="background-color: #b1a454"></div> Olive Drab </div>
+			<div><div class="swatch" data-clipboard-text="#948843" style="background-color: #948843"></div> Dark Olive Drab </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#e8e8cd" style="background-color: #e8e8cd"></div> Light Khaki </div>
+			<div><div class="swatch" data-clipboard-text="#cec89e" style="background-color: #cec89e"></div> Khaki </div>
+			<div><div class="swatch" data-clipboard-text="#8a7444" style="background-color: #8a7444"></div> Deep Khaki </div>
+			<div><div class="swatch" data-clipboard-text="#816b3f" style="background-color: #816b3f"></div> Dark Khaki </div>
+			<div><div class="swatch" data-clipboard-text="#857734" style="background-color: #857734"></div> Yellow-Green Drab </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#afc1b4" style="background-color: #afc1b4"></div> ACU Green </div>
+			<div><div class="swatch" data-clipboard-text="#91a597" style="background-color: #91a597"></div> Light Cool Olive Drab </div>
+			<div><div class="swatch" data-clipboard-text="#5a7162" style="background-color: #5a7162"></div> Cool Olive Drab </div>
+			<div><div class="swatch" data-clipboard-text="#dad7cb" style="background-color: #dad7cb"></div> Light Dirty Gray </div>
+			<div><div class="swatch" data-clipboard-text="#a3a28f" style="background-color: #a3a28f"></div> Dirty Gray </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#e8e1d7" style="background-color: #e8e1d7"></div> Pale French Gray </div>
+			<div><div class="swatch" data-clipboard-text="#cfc0a9" style="background-color: #cfc0a9"></div> French Gray </div>
+			<div><div class="swatch" data-clipboard-text="#897954" style="background-color: #897954"></div> Dark French Gray </div>
+			<div><div class="swatch" data-clipboard-text="#efdec7" style="background-color: #efdec7"></div> Pale Brown </div>
+			<div><div class="swatch" data-clipboard-text="#e0cbab" style="background-color: #e0cbab"></div> Light Brown </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#e2e2e2" style="background-color: #e2e2e2"></div> Light Gray </div>
+			<div><div class="swatch" data-clipboard-text="#a6a6a6" style="background-color: #a6a6a6"></div> Pewter </div>
+			<div><div class="swatch" data-clipboard-text="#868686" style="background-color: #868686"></div> Gray </div>
+			<div><div class="swatch" data-clipboard-text="#606060" style="background-color: #606060"></div> Dark Gray </div>
+			<div><div class="swatch" data-clipboard-text="#404040" style="background-color: #404040"></div> Charcoal </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#bfb7b1" style="background-color: #bfb7b1"></div> Pale Warm Gray </div>
+			<div><div class="swatch" data-clipboard-text="#c2bfb6" style="background-color: #c2bfb6"></div> Light Warm Gray </div>
+			<div><div class="swatch" data-clipboard-text="#847872" style="background-color: #847872"></div> Warm Gray </div>
+			<div><div class="swatch" data-clipboard-text="#726e63" style="background-color: #726e63"></div> Deep Warm Gray </div>
+			<div><div class="swatch" data-clipboard-text="#686155" style="background-color: #686155"></div> Dark Warm Gray </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#cacaca" style="background-color: #cacaca"></div> Silver Gray </div>
+			<div><div class="swatch" data-clipboard-text="#d9d0d0" style="background-color: #d9d0d0"></div> Light Smoke </div>
+			<div><div class="swatch" data-clipboard-text="#c5b8b8" style="background-color: #c5b8b8"></div> Smoke </div>
+			<div><div class="swatch" data-clipboard-text="#aa9797" style="background-color: #aa9797"></div> Dark Smoke </div>
+			<div><div class="swatch" data-clipboard-text="#ddd0d0" style="background-color: #ddd0d0"></div> Pale Cool Brown </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#a34d30" style="background-color: #a34d30"></div> Clay </div>
+			<div><div class="swatch" data-clipboard-text="#75392b" style="background-color: #75392b"></div> Red-Brown </div>
+			<div><div class="swatch" data-clipboard-text="#e6d8b9" style="background-color: #e6d8b9"></div> Light Tan </div>
+			<div><div class="swatch" data-clipboard-text="#be9f7c" style="background-color: #be9f7c"></div> Tan </div>
+			<div><div class="swatch" data-clipboard-text="#aa7955" style="background-color: #aa7955"></div> Dark Tan </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#b49367" style="background-color: #b49367"></div> Earth Brown </div>
+			<div><div class="swatch" data-clipboard-text="#dbb694" style="background-color: #dbb694"></div> Light Warm Brown </div>
+			<div><div class="swatch" data-clipboard-text="#bb6106" style="background-color: #bb6106"></div> Warm Brown </div>
+			<div><div class="swatch" data-clipboard-text="#a0501b" style="background-color: #a0501b"></div> Dark Warm Brown </div>
+			<div><div class="swatch" data-clipboard-text="#894212" style="background-color: #894212"></div> Deep Warm Brown </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#9b6857" style="background-color: #9b6857"></div> Cool Brown </div>
+			<div><div class="swatch" data-clipboard-text="#775042" style="background-color: #775042"></div> Dark Cool Brown </div>
+			<div><div class="swatch" data-clipboard-text="#ba7b07" style="background-color: #ba7b07"></div> Hazel </div>
+			<div><div class="swatch" data-clipboard-text="#795104" style="background-color: #795104"></div> Cinnamon </div>
+			<div><div class="swatch" data-clipboard-text="#5a3c03" style="background-color: #5a3c03"></div> Mahogany </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#8e5a34" style="background-color: #8e5a34"></div> Milk Chocolate </div>
+			<div><div class="swatch" data-clipboard-text="#663100" style="background-color: #663100"></div> Brown </div>
+			<div><div class="swatch" data-clipboard-text="#4f2403" style="background-color: #4f2403"></div> Dark Brown </div>
+			<div><div class="swatch" data-clipboard-text="#b8917c" style="background-color: #b8917c"></div> Doe </div>
+			<div><div class="swatch" data-clipboard-text="#9d6448" style="background-color: #9d6448"></div> Bronze </div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div><div class="swatch" data-clipboard-text="#effd3e" style="background-color: #effd3e"></div> Fluorescent Gold </div>
+			<div><div class="swatch" data-clipboard-text="#fbb64f" style="background-color: #fbb64f"></div> Light Fluorescent Orange </div>
+			<div><div class="swatch" data-clipboard-text="#ff8000" style="background-color: #ff8000"></div> Fluorescent Orange </div>
+			<div><div class="swatch" data-clipboard-text="#ffffff" style="background-color: #ffffff"></div> White </div>
+			<div><div class="swatch" data-clipboard-text="#000000" style="background-color: #000000"></div> Black </div>
 		</div>
 	</div>
 </div>
@@ -394,5 +378,12 @@
 </body>
 
 
+<!-- clipboard.js -->
+<script src="files/clipboard.js-master/dist/clipboard.min.js"></script>
+
+<script>
+var btns = document.querySelectorAll('div');
+var clipboard = new ClipboardJS(btns);
+</script>
 
 </html>
