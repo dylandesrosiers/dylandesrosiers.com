@@ -15,6 +15,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
+    <!-- clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
 <style>
 .swatch {
 	width: 55px;
@@ -34,13 +37,21 @@
     <h1 class="mt-4">Thread Color Chart</h1>
     <h4><i>from <a href="https://www.stadriemblems.com/color_chart/" target="_blank">Stadri Emblems</a></i></h4>
 
-  <br>
+  <br />
+
+  <!-- Trigger -->
+  <button class="btn btn-primary" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
+      Copy to clipboard
+  </button>
+
+<br /><br />
 
 <div class="col-sm-12">
 	<div class="clear-div"> </div>
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
-			<div><div class="swatch" style="background-color: #f7f9cd"></div>Cream </div>
+
+			<div><div class="swatch" style="background-color: #f7f9cd" data-clipboard-text="#f7f9cd"></div> Cream </div>
 			<div><div class="swatch" style="background-color: #fff287"></div> Pale Athletic Gold </div>
 			<div><div class="swatch" style="background-color: #ffdb00"></div> Light Athletic Gold </div>
 			<div><div class="swatch" style="background-color: #ffd400"></div> Athletic Gold </div>
@@ -375,6 +386,8 @@
 </div>
 
 <br /><br />
-
 </body>
+
+
+
 </html>
