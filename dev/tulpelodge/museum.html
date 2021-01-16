@@ -35,7 +35,7 @@
 
           <div class="jumbotron" style="background-color: #ddd;">
             <h1>Welcome to the Tulpe Lodge Virtual History Museum!</h1>
-            <p class="lead">Tulpe Lodge is a conglomeration of six different Lodges that have merged over the years: Noquochoke 124, Tulpe 245, Agawam 509, Neemat 124, Wincheck 534, Abnaki 102, and Tulpe 102. Explore our <span id="yearsAgo"></span> years of history through this new interactive website. Click below to read more about our history.</p>
+            <p class="lead">Tulpe Lodge is a conglomeration of six different Lodges that have merged over the years: Noquochoke 124, Tulpe 245, Agawam 509, Neemat 124, Wincheck 534, Abnaki 102, and Tulpe 102. Explore our <script>var currentYear = new Date().getFullYear(); document.write(currentYear - 1938);</script> years of history through this new interactive website. Click below to read more about our history.</p>
             <p class="lead">Please contact us if you notice an error on our website, or if you have an artifact to add to our digital collection.</p>
             <a class="btn btn-lg btn-primary" href="history" role="button">Learn More</a>
             <a class="btn btn-lg btn-secondary" href="#contact" data-toggle="modal" data-target="#contact" role="button">Contact Us</a>
@@ -156,7 +156,7 @@
   <footer class="container-fluid">
   <div class="row">
       <div class="col-md-12">
-          <p>Copyright &copy; <span id="currentYear"></span> - Tulpe Lodge &nbsp;&bull;&nbsp; Order of the Arrow, Boy Scouts of America &nbsp;&bull;&nbsp; All rights reserved.</p>
+          <p>Copyright &copy; <script>var currentYear = new Date().getFullYear(); document.write(currentYear);</script> Tulpe Lodge &nbsp;&bull;&nbsp; Order of the Arrow, Boy Scouts of America &nbsp;&bull;&nbsp; All rights reserved.</p>
       </div>
   </div>
   </footer>
@@ -213,15 +213,5 @@
     </div>
 
 </body>
-
-<script>
-  var d = new Date();
-  var n = d.getFullYear() - 1938;
-  document.getElementById("yearsAgo").innerHTML = n;
-
-  var a = new Date();
-  var b = a.getFullYear();
-  document.getElementById("currentYear").innerHTML = b;
-</script>
 
 </html>
