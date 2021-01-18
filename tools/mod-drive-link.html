@@ -1,25 +1,34 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  <title>Google Drive Sharing Link Modifier</title>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Google Drive Link Modifier | Dylan Desrosiers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<style>
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+</style>
+
 </head>
-<body>
-<div class="header-section">
-    <div class="container text-center mt-4">
-        <h2>Google Drive Sharing Link Modifier</h2>
-    </div>
-</div>
-<div class="form-container py-5">
-    <div class="container" style="max-width: 400px; margin: 0 auto;">
+
+<body class="d-flex flex-column h-100">
+  <main role="main" class="flex-shrink-0">
+    <div class="container">
+      <h2 class="mt-4 text-center">Google Drive Link Modifier</h2>
+
         <form>
-            <div class="form-group">
-                <label for="inputURL"><b>Google Drive Link</b></label>
-                <input type="url" class="form-control" id="inputURL">
-            </div>
+          <div class="form-group">
+            <label for="inputURL"><b>Google Drive Link</b></label>
+            <input type="url" class="form-control" id="inputURL">
+          </div>
             <button class="btn btn-primary" type="button" id="btnGenerate">Generate Link</button>
         </form>
 
@@ -43,7 +52,6 @@ https://drive.google.com/file/d/fileID
             <button class="btn btn-primary copy-clipboard">Copy</button>
         </div>
 
-
 <!--
         <div class="input-group mb-3">
           <input type="text" class="form-control" id="outputURL">
@@ -54,10 +62,9 @@ https://drive.google.com/file/d/fileID
 -->
 
     </div>
-</div>
+</main>
 
 </body>
-
 
 <script>
     var inputURL;
