@@ -12,7 +12,7 @@
 <style>
 .container {
   width: auto;
-  max-width: 680px;
+  max-width: 500px;
   padding: 0 15px;
 }
 </style>
@@ -21,50 +21,36 @@
 
 <body class="d-flex flex-column h-100">
   <main role="main" class="flex-shrink-0">
+
     <div class="container">
       <h2 class="mt-4 text-center">Google Drive Link Modifier</h2>
 
         <form>
-          <div class="form-group">
-            <label for="inputURL">Google Drive Link</label>
-            <input type="url" class="form-control" id="inputURL">
+          <div class="form-group mt-5">
+            <label>Google Drive Link</label>
+              <div class="input-group">
+                <input type="url" class="form-control" id="inputURL">
+              <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="btnGenerate">Generate</button>
+            </div>
           </div>
-            <button class="btn btn-primary" type="button" id="btnGenerate">Generate Link</button>
-        </form>
+        </div>
 
-      <!--
-      <div class="btn-group-vertical mt-4">
-        <button class="btn btn-secondary">Google Drive File</button>
-        <button class="btn btn-primary">Google Docs</button>
-        <button class="btn btn-warning">Google Slides</button>
-        <button class="btn btn-success">Google Sheets</button>
-        <button class="btn btn-danger">Google Drawings</button>
-        <button class="btn btn-primary" style="background-color: #7248B9; border-color: #7248B9">Google Forms</button>
-      </div>
-      -->
-
-<!--
+<!-- TEST URL
 https://drive.google.com/file/d/fileID
 -->
 
-        <div class="mt-4">
-            <div class="alert alert-primary" id="outputURL">‏‏‎ ‎</div>
-            <button class="btn btn-primary copy-clipboard">Copy</button>
-        </div>
-
-<br /><br />
-
-        <div class="input-group mb-3">
+        <div class="input-group mt-4">
           <input type="text" class="form-control" id="outputURL" disabled>
           <div class="input-group-append">
-            <button class="btn btn-primary copy-clipboard">Copy</button>
+            <button class="btn btn-outline-secondary copy-clipboard">Copy</button>
           </div>
         </div>
+      </form>
 
 
     </div>
-</main>
-
+  </main>
 </body>
 
 <script>
@@ -75,10 +61,14 @@ https://drive.google.com/file/d/fileID
 
     document.getElementById('btnGenerate').onclick = function generateLink() {
       inputURL = document.getElementById('inputURL').value;
+//      if (inputURL == "") {
+//        document.getElementById('inputURL').setAttribute('placeholder', "Please enter a URL");
+//      } else {
       fileType = inputURL.split('/')[3];
       fileID = inputURL.split('/')[5];
       outputURL = 'https://drive.google.com/uc?id=' + fileID;
-      document.getElementById('outputURL').innerText = outputURL;
+      document.getElementById('outputURL').setAttribute('value', outputURL);
+//    }
     };
 
 </script>
