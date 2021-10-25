@@ -51,15 +51,16 @@
 
     <div class="nav2">
       <center>
-        <button class="btn btn-secondary btn-sm btn-margin">All</button>
-        <button class="btn btn-secondary btn-sm btn-margin">Noquochoke 124</button>
-        <button class="btn btn-secondary btn-sm btn-margin">Tulpe 245</button>
-        <button class="btn btn-secondary btn-sm btn-margin">Agawam 509</button>
-        <button class="btn btn-secondary btn-sm btn-margin">Neemat 124</button>
-        <button class="btn btn-secondary btn-sm btn-margin">Wincheck 534</button>
-        <button class="btn btn-secondary btn-sm btn-margin">Abnaki 102</button>
-        <button class="btn btn-secondary btn-sm btn-margin">Tulpe 102</button>
-        <button class="btn btn-light btn-sm btn-margin" onclick="fireworksConfetti()">Confetti</button>
+      <div id="btnContainer">
+        <button class="btn btn-light btn-sm btn-margin" onclick="myFunction()">All</button>
+        <button class="btn btn-secondary btn-sm btn-margin" onclick="myFunction()">Noquochoke 124</button>
+        <button class="btn btn-secondary btn-sm btn-margin" onclick="myFunction()">Tulpe 245</button>
+        <button class="btn btn-secondary btn-sm btn-margin" onclick="myFunction()">Agawam 509</button>
+        <button class="btn btn-secondary btn-sm btn-margin" onclick="myFunction()">Neemat 124</button>
+        <button class="btn btn-secondary btn-sm btn-margin" onclick="myFunction()">Wincheck 534</button>
+        <button class="btn btn-secondary btn-sm btn-margin" onclick="myFunction()">Abnaki 102</button>
+        <button class="btn btn-secondary btn-sm btn-margin" onclick="myFunction()">Tulpe 102</button>
+      </div>
       </center>
       <!--
       <div class="input-group input-group-sm mb-2">
@@ -78,7 +79,7 @@
       -->
     </div>
 
-    <main class="container-fluid flex-shrink-0">
+    <main class="container flex-shrink-0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
           <div class="jumbotron" style="background-color: #ddd;">
@@ -263,65 +264,15 @@
 </body>
 
 <script>
-function fireworksConfetti() {
-  var duration = 15 * 1000;
-  var animationEnd = Date.now() + duration;
-  var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-
-  function randomInRange(min, max) {
-    return Math.random() * (max - min) + min;
-  }
-
-  var interval = setInterval(function() {
-    var timeLeft = animationEnd - Date.now();
-
-    if (timeLeft <= 0) {
-      return clearInterval(interval);
-    }
-
-    var particleCount = 50 * (timeLeft / duration);
-    // since particles fall down, start a bit higher than random
-    confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
-    confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
-  }, 250);
-};
-
-
-
-function realisticConfetti() {
-  var count = 200;
-  var defaults = {
-  origin: { y: 0.7 }
-  };
-
-  function fire(particleRatio, opts) {
-    confetti(Object.assign({}, defaults, opts, {
-      particleCount: Math.floor(count * particleRatio)
-    }));
-  }
-
-  fire(0.25, {
-    spread: 26,
-    startVelocity: 55,
-  });
-  fire(0.2, {
-    spread: 60,
-  });
-  fire(0.35, {
-    spread: 100,
-    decay: 0.91,
-    scalar: 0.8
-  });
-  fire(0.1, {
-    spread: 120,
-    startVelocity: 25,
-    decay: 0.92,
-    scalar: 1.2
-  });
-  fire(0.1, {
-    spread: 120,
-    startVelocity: 45,
-  });
-};
+function myFunction() {
+  var myBtnContainer = document.getElementById("btnContainer");
+  var btns = myBtnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("btn btn-light");
+      current[0].className = current[0].className.replace(" btn-light", " btn-secondary");
+      this.className += " btn-light";
+    });
+}
 </script>
 </html>
